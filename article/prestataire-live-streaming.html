@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. https://webflow.com -->
-<!-- Last Published: Thu Feb 19 2026 08:23:43 GMT+0000 (Coordinated Universal Time) -->
+<!-- Last Published: Fri Feb 27 2026 16:37:19 GMT+0000 (Coordinated Universal Time) -->
 <html data-wf-domain="www.hstories.fr" data-wf-page="prestataire-live-streaming" data-wf-site="63ab104ef3af9947ab6d505f" lang="fr-FR">
 <head>
 <meta charset="utf-8"/>
-<title>H.stories | Prestataire de live streaming pour vos événements d&#x27;exception</title>
+<title>H.stories | Prestataire live streaming de référence</title>
 <link rel="alternate" hrefLang="x-default" href="https://www.hstories.fr/prestataire-live-streaming"/>
 <link rel="alternate" hrefLang="fr-FR" href="https://www.hstories.fr/prestataire-live-streaming"/>
-<meta content="Prestataire de live streaming pour vos événements d&#x27;exception. H.stories, agence de production événementielle à Paris." name="description"/>
-<meta content="H.stories | Prestataire de live streaming pour vos événements d&#x27;exception" property="og:title"/>
-<meta content="Prestataire de live streaming pour vos événements d&#x27;exception. H.stories, agence de production événementielle à Paris." property="og:description"/>
+<meta content="Prestataire live streaming de référence. H.stories, agence de production événementielle à Paris." name="description"/>
+<meta content="H.stories | Prestataire live streaming de référence" property="og:title"/>
+<meta content="Prestataire live streaming de référence. H.stories, agence de production événementielle à Paris." property="og:description"/>
 <meta content="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/68eb6b30079b8a74059d493e_Livestreaminghstories.webp" property="og:image"/>
-<meta content="H.stories | Prestataire de live streaming pour vos événements d&#x27;exception" property="twitter:title"/>
-<meta content="Prestataire de live streaming pour vos événements d&#x27;exception. H.stories, agence de production événementielle à Paris." property="twitter:description"/>
+<meta content="H.stories | Prestataire live streaming de référence" property="twitter:title"/>
+<meta content="Prestataire live streaming de référence. H.stories, agence de production événementielle à Paris." property="twitter:description"/>
 <meta content="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/68eb6b30079b8a74059d493e_Livestreaminghstories.webp" property="twitter:image"/>
 <meta property="og:type" content="website"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="Webflow" name="generator"/>
 <link href="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/css/h-stories.webflow.shared.6a93c43d4.min.css" rel="stylesheet" type="text/css"/>
-<link href="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/css/h-stories.webflow.66fd3e52b948915ba888be7a-6338034e6.min.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/css/h-stories.webflow.67505eec688f14fb01554d94-0b019b5ff.min.css" rel="stylesheet" type="text/css"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -29,706 +29,469 @@
 <link href="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63f75ed30a6fbc79444142b1_H.stories%20Webclip.jpg" rel="apple-touch-icon"/>
 <link href="https://www.hstories.fr/prestataire-live-streaming" rel="canonical"/>
 <meta name="robots" content="noindex, nofollow"/>
-<!-- Preconnect optimisé -->
 <link rel="preconnect" href="https://cdn.prod.website-files.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>
-/* FAQ Accordion - fermé par défaut */
-.faq-content,
-.faq-rich {
+/* FAQ Accordion */
+.faq-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.35s ease;
 }
-.div-faq.faq-open .faq-content,
-.div-block-205.faq-open .faq-rich {
+.div-faq.faq-open .faq-content {
   max-height: 2000px;
 }
-/* Rotation flèche FAQ spécifiques */
 .div-faq .arrow-faq {
   transition: transform 0.35s ease;
 }
 .div-faq.faq-open .arrow-faq {
   transform: rotate(180deg);
 }
-/* Flèches FAQ génériques */
-.div-block-205 .arrow-up { display: none; }
-.div-block-205 .arrow-down { display: block; }
-.div-block-205.faq-open .arrow-up { display: block; }
-.div-block-205.faq-open .arrow-down { display: none; }
-/* Rendre le bloc FAQ génériques visible (Webflow .hide = display:none) */
-.div-block-204.hide { display: block !important; }
-/* Curseur pointer sur les zones cliquables */
-.div-block-260,
-.div-block-205 > .text-block-32,
-.div-block-206 { cursor: pointer; }
-/* Masquer la popup cookie (Finsweet ne fonctionne pas hors Webflow) */
+/* Cursor pointer on clickable areas */
+.div-block-260 { cursor: pointer; }
+/* Hide cookie popup (Finsweet ne fonctionne pas hors Webflow) */
 .cookie-consent { display: none !important; }
+/* Force opacity for scroll animations */
+[data-w-id] { opacity: 1 !important; }
+/* WHY section decoration images */
+.why-img {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  flex: 1;
+}
+/* Hero background */
+.hero-bg-landing {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
 </style>
 </head>
-<body class="body-15">
-  <div class="cookie-consent">
-    <div fs-cc="banner" class="fs-cc-banner2_component">
-      <div class="fs-cc-banner2_container">
-        <div class="fs-cc-banner2_text">
-          Ce site utilise des cookies pour vous garantir la meilleure expérience sur notre site.
-          <a href="https://hstories.fr/conditions-dutilisation" target="_blank" class="link-6">
-            En savoir plus
+<body class="body-15 ville">
+<div class="cookie-consent">
+  <div fs-cc="banner" class="fs-cc-banner2_component">
+    <div class="fs-cc-banner2_container">
+      <div class="fs-cc-banner2_text">Ce site utilise des cookies pour vous garantir la meilleure expérience sur notre site. <a href="https://hstories.fr/conditions-dutilisation" target="_blank" class="link-6">En savoir plus</a></div>
+      <div class="fs-cc-banner2_buttons-wrapper">
+        <a fs-cc="deny" href="#" class="fs-cc-banner2_button fs-cc-button-alt w-button">refuser</a>
+        <a fs-cc="allow" href="#" class="fs-cc-banner2_button w-button">accepter</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 vision w-nav">
+  <div class="container w-container">
+    <a href="/" class="w-nav-brand"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white.avif" loading="eager" width="Auto" sizes="(max-width: 479px) 0px, 100vw" srcset="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-500.avif 500w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-800.avif 800w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-1080.avif 1080w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-1600.avif 1600w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-2000.avif 2000w" alt="H.stories Logo" class="image-3 inverted"/></a>
+    <div class="div-block-76">
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <div class="div-block-75">
+          <a href="/stories" class="nav-link journal w-nav-link">stories</a>
+          <div data-delay="0" data-hover="false" class="dropdown-3 w-dropdown">
+            <div class="nav-link journal w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div>Services</div>
+            </div>
+            <nav class="dropdown-list-2 w-dropdown-list">
+              <a href="/conception-production-evenement" class="dropdown-link w-dropdown-link">Conception et production d’évènement</a>
+              <a href="/scenographie-evenementielle" class="dropdown-link w-dropdown-link">Scénographie évènementielle</a>
+              <a href="/activation-de-marque" class="dropdown-link w-dropdown-link">Activation de marque</a>
+              <a href="/diffusion-en-direct-emission-studio" class="dropdown-link w-dropdown-link">Livestreaming &amp; Emission studio</a>
+            </nav>
+          </div>
+          <a href="/journal" class="nav-link journal w-nav-link">Journal</a>
+          <a href="/contact" class="nav-link journal w-nav-link">Contact</a>
+        </div>
+      </nav>
+      <a href="https://www.instagram.com/hstories_event/" target="_blank" class="link-block-2 black-logo w-inline-block"></a>
+      <div class="menu-button w-nav-button"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63f77848f0889fecbaa3c0b0_menu-burger-7.svg" loading="lazy" alt="" class="image-40 inverted"/></div>
+    </div>
+  </div>
+</div>
+<section class="section-18">
+  <div class="w-layout-blockcontainer container-21 w-container">
+    <div data-w-id="4c21fd26-14b8-1756-eef1-3e4872317712" style="opacity:1">
+      <h1 class="heading-53">Prestataire live streaming de référence</h1>
+      <p class="paragraph-31black">H.stories est une <a href="https://www.hstories.fr/agence-audiovisuel-evenement-live-stream" class="link-51"><strong>agence de production audiovisuelle</strong></a> et <strong>prestataire live streaming</strong> basée à Paris, spécialisée dans la captation vidéo et la diffusion en direct d&#x27;événements pour les marques de luxe, les entreprises et les institutions. Depuis plus de 11 ans et 350 projets réalisés, nous concevons des dispositifs complets de <strong>live streaming</strong> - cameras, habillage graphique, retransmission multi-plateforme - qui transforment chaque événement en une expérience de diffusion en direct de qualité broadcast. Notre agence a produit plus de <strong>50 diffusions live sans incident</strong> pour l&#x27;association LIVE de Brigitte Macron, et accompagné les groupes LVMH, Louis Vuitton et EssilorLuxottica dans la diffusion vidéo de leurs événements stratégiques en direct.</p>
+      <div class="div-block-151">
+        <a href="https://www.hstories.fr/" class="button-9 full transparent w-button">nos services</a>
+<a href="https://www.hstories.fr/demande-de-devis" class="button-9 full dark w-button">demandez un devis</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-bg-landing" style="background-image:url('https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/68eb6b30079b8a74059d493e_Livestreaminghstories.webp')"></div>
+</section>
+<section>
+<div class="w-layout-blockcontainer container-20 w-container">
+<div class="div-block-153">
+  <div id="w-node-_00000000-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072dbe845a734a24af65_lvmh-logo.avif" loading="lazy" alt="LVMH Logo" class="image-9"/></div>
+  <div id="w-node-_00000001-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63f773b9767a6366212fe81b_Louis_Vuitton_logo.avif" loading="lazy" alt="Louis Vuitton Logo" class="image-10 dark"/></div>
+  <div id="w-node-_00000002-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072ddaa242a45d57c4a4_MoetHennessy-logo.avif" loading="lazy" alt="Moët Hennessy Logo" class="image-11"/></div>
+  <div id="w-node-_00000003-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072e6e9a7aafe45aa5aa_Paco%20Rabanne%20Logo.avif" loading="lazy" alt="Paco Rabanne Logo" class="image-12"/></div>
+  <div id="w-node-_00000004-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072d959ad14b3ae4fe8f_Luxottica_logo_blue_background.png" loading="lazy" alt="Luxottica Logo" class="image-13"/></div>
+  <div id="w-node-_00000005-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072cf8d2ff42f28c2815_Logo_EssilorLuxottica.svg.avif" loading="lazy" alt="EssilorLuxottica Logo" class="image-14"/></div>
+  <div id="w-node-_00000006-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072c6352c23b97e32695_L%27Ore%CC%81al_logo.svg.avif" loading="lazy" alt="L&#x27;Oréal Logo" class="image-15"/></div>
+  <div id="w-node-_00000007-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072d959ad14b3ae4fe8f_Luxottica_logo_blue_background.png" loading="lazy" alt="Luxottica Logo" class="image-13"/></div>
+  <div id="w-node-_00000008-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072cf8d2ff6bf78c2814_Kenzo-logo.avif" loading="lazy" alt="Kenzo Logo" class="image-17"/></div>
+  <div id="w-node-_00000009-01554d94" class="div-block-169"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072c31df2f1fa1ebdfcb_Essilor-Logo.wine.avif" loading="lazy" alt="Essilor Logo" class="image-18"/></div>
+</div>
+<div class="div-block-148">
+  <h2 class="heading-42 dark">Événements réalisés en live streaming</h2>
+  <div class="div-block-167">
+    <div class="w-dyn-list">
+      <div role="list" class="collection-list-8 w-dyn-items">
+        <div id="w-node-a7186c14-0000-01554d94" role="listitem" class="collection-item-18 w-dyn-item">
+          <a style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67bc536676fcf92ad44b2deb_Screenshot%202025-02-24%20at%2012.07.58%20PM.jpg')" href="/events/livestreaming-studio-paris" class="link-block-9 w-inline-block">
+            <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67bc55496558bbade3a91a6b_IMG_3952%20(1).jpg')" class="im-age-fond"></div>
+            <div data-w-id="a7186c14-0000-hover" class="div-block-149">
+              <img src="https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/63ca474531df2fbbd6f04e21_Live%20L%E2%80%99institut%20des%20Vocations%20pour%20l%E2%80%99Emploi_.png" loading="lazy" alt="" class="image-51"/>
+            </div>
+            <div class="titre-de-levent">
+              <div class="text-block-30">LIVE Masterclasses livestreaming</div>
+            </div>
           </a>
         </div>
-        <div class="fs-cc-banner2_buttons-wrapper">
-          <a fs-cc="deny" href="#" class="fs-cc-banner2_button fs-cc-button-alt w-button">
-            refuser
+        <div id="w-node-a7186c14-0001-01554d94" role="listitem" class="collection-item-18 w-dyn-item">
+          <a style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b881b020c425646ffc23ab_IMG_9733.jpg')" href="/events/inauguration-campus-live-reims-bernard-arnault-mme-brigitte-macron-lvmh" class="link-block-9 w-inline-block">
+            <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b88620722a106d782b33b5_IMG_9636.jpg')" class="im-age-fond"></div>
+            <div data-w-id="a7186c14-0001-hover" class="div-block-149">
+              <img src="https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/63ca474531df2fbbd6f04e21_Live%20L%E2%80%99institut%20des%20Vocations%20pour%20l%E2%80%99Emploi_.png" loading="lazy" alt="" class="image-51"/>
+            </div>
+            <div class="titre-de-levent">
+              <div class="text-block-30">LIVE Inauguration Campus Reims</div>
+            </div>
           </a>
-          <a fs-cc="allow" href="#" class="fs-cc-banner2_button w-button">
-            accepter
+        </div>
+        <div id="w-node-a7186c14-0002-01554d94" role="listitem" class="collection-item-18 w-dyn-item">
+          <a style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67bc536676fcf92ad44b2deb_Screenshot%202025-02-24%20at%2012.07.58%20PM.jpg')" href="/events/livestreaming-studio-paris" class="link-block-9 w-inline-block">
+            <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67bc55496558bbade3a91a6b_IMG_3952%20(1).jpg')" class="im-age-fond"></div>
+            <div data-w-id="a7186c14-0002-hover" class="div-block-149">
+              <img src="https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/63ca474531df2fbbd6f04e21_Live%20L%E2%80%99institut%20des%20Vocations%20pour%20l%E2%80%99Emploi_.png" loading="lazy" alt="" class="image-51"/>
+            </div>
+            <div class="titre-de-levent">
+              <div class="text-block-30">LVMH Blueprint</div>
+            </div>
+          </a>
+        </div>
+        <div id="w-node-a7186c14-0003-01554d94" role="listitem" class="collection-item-18 w-dyn-item">
+          <a style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/63ca502ebe845ad9ef29c4e3_Kids5%20copy.JPG')" href="/events/essilorluxottica-journee-presses-fw22" class="link-block-9 w-inline-block">
+            <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/64396fac2c64d3f6c0ce45e8_H.stories10%20Essilorluxottica-Laurinepaumard.jpg')" class="im-age-fond"></div>
+            <div data-w-id="a7186c14-0003-hover" class="div-block-149">
+              <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072cf8d2ff42f28c2815_Logo_EssilorLuxottica.svg.avif" loading="lazy" alt="" class="image-51"/>
+            </div>
+            <div class="titre-de-levent">
+              <div class="text-block-30">EssilorLuxottica Journées Presse SS22</div>
+            </div>
+          </a>
+        </div>
+        <div id="w-node-a7186c14-0004-01554d94" role="listitem" class="collection-item-18 w-dyn-item">
+          <a style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b881b020c425646ffc23ab_IMG_9733.jpg')" href="/events/inauguration-campus-live-reims-bernard-arnault-mme-brigitte-macron-lvmh" class="link-block-9 w-inline-block">
+            <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b88620722a106d782b33b5_IMG_9636.jpg')" class="im-age-fond"></div>
+            <div data-w-id="a7186c14-0004-hover" class="div-block-149">
+              <img src="https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/63ca474531df2fbbd6f04e21_Live%20L%E2%80%99institut%20des%20Vocations%20pour%20l%E2%80%99Emploi_.png" loading="lazy" alt="" class="image-51"/>
+            </div>
+            <div class="titre-de-levent">
+              <div class="text-block-30">LIVE Inauguration Campus Le Havre</div>
+            </div>
+          </a>
+        </div>
+        <div id="w-node-a7186c14-0005-01554d94" role="listitem" class="collection-item-18 w-dyn-item">
+          <a style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67bc536676fcf92ad44b2deb_Screenshot%202025-02-24%20at%2012.07.58%20PM.jpg')" href="/events/livestreaming-studio-paris" class="link-block-9 w-inline-block">
+            <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67bc55496558bbade3a91a6b_IMG_3952%20(1).jpg')" class="im-age-fond"></div>
+            <div data-w-id="a7186c14-0005-hover" class="div-block-149">
+              <img src="https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/63ca474531df2fbbd6f04e21_Live%20L%E2%80%99institut%20des%20Vocations%20pour%20l%E2%80%99Emploi_.png" loading="lazy" alt="" class="image-51"/>
+            </div>
+            <div class="titre-de-levent">
+              <div class="text-block-30">Under Armour x Teddy Riner</div>
+            </div>
           </a>
         </div>
       </div>
     </div>
   </div>
-  <div>
-    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 vision w-nav">
-      <div class="container w-container">
-        <a href="/" class="w-nav-brand">
-          <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white.avif" loading="eager" sizes="(max-width: 479px) 100vw, 300px" srcset="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-500.avif 500w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-800.avif 800w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-1080.avif 1080w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-1600.avif 1600w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-2000.avif 2000w" alt="H.stories Logo" class="image-3"/>
+</div>
+<div class="div-block-154">
+  <h2 class="heading-42 white full-white">Pourquoi faire confiance à H.stories pour vos événements de live streaming ?</h2>
+  <div class="div-block-162">
+    <div class="div-block-163">
+      <div class="why-img" style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b7583b576cc197f4e22420_image00018%20(1).jpeg')"></div>
+      <div class="div-block-165">
+        <h3 class="heading-54">Une expertise audiovisuelle dédiée au live streaming</h3>
+        <div class="rich-text-block-black w-richtext">
+          <p class="paragraph-32">Nos équipes déploient un dispositif de captation adapté à chaque événement : captation multi-cameras avec opérateurs dédiés, réalisateur vidéo, prise de son, éclairage et habillage graphique en temps réel. Nous maîtrisons les protocoles RTMP, NDI et SRT pour diffuser un flux de streaming stable sur internet, même avec une connexion internet limitée. La qualité d&#x27;image de nos vidéos en direct atteint un niveau professionnel, permettant à votre public à distance de vivre l&#x27;événement avec la même intensité qu&#x27;en présentiel. Notre équipe gère l&#x27;ensemble de la chaîne de diffusion : captation vidéo, encodage, diffusion sur YouTube, LinkedIn, Facebook, Twitch, Zoom, Teams, site web dédié et plateformes événementielles privées. L&#x27;accès à chaque plateforme de streaming peut être restreint ou accessible au public selon vos besoins de confidentialité, sans limite de participants à distance. Depuis notre <a href="https://www.hstories.fr/studio-livestreaming" class="link-51"><strong>studio de livestreaming</strong></a> à Paris ou en installation dédiée sur site, nous déployons un dispositif de captation vidéo calibré pour chaque format de streaming live. Notre équipe technique intervient en amont avec une phase de test dédiée pour prévenir tout incident pendant la retransmission.</p>
+        </div>
+      </div>
+    </div>
+    <div class="div-block-163">
+      <div class="div-block-165 invert">
+        <h3 class="heading-54">Les formats d&#x27;événements que nous diffusons en direct</h3>
+        <div class="w-richtext">
+          <p class="paragraph-32">Le live streaming s&#x27;adapte à une large gamme de formats : conférences de presse, séminaires d&#x27;entreprise, lancements de produits, <a href="https://www.hstories.fr/agence-organisation-defile-de-mode" class="link-51"><strong>défilés de mode</strong></a>, galas, masterclasses interactives et événements hybrides combinant présentiel et digital. Nous avons accompagné l&#x27;association LIVE pour la production en direct de masterclasses avec des personnes de premier plan comme Delphine Arnault (DG Dior), Nicolas Ghesquière (DA Louis Vuitton) et Alain Ducasse - un dispositif de captation vidéo reliant jusqu&#x27;à 6 villes de France en duplex simultané. Que votre audience soit de 50 participants ou de plusieurs centaines de spectateurs, notre organisation garantit une expérience dynamique et la possibilité d&#x27;un accès fluide sur smartphone ou ordinateur. Nous pilotons aussi bien la réalisation d&#x27;une émission en plateau que la diffusion d&#x27;un événement en direct sur site. Nos solutions techniques couvrent le partage de vidéos, le chat interactif avec l&#x27;audience et les sondages en temps réel, permettant à votre public d&#x27;interagir avec les intervenants. Notre équipe peut diffuser votre événement sur chaque plateforme choisie, avec une image de qualité professionnelle.</p>
+        </div>
+      </div>
+      <div class="why-img" style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b881b020c425646ffc23ab_IMG_9733.jpg')"></div>
+    </div>
+    <div class="div-block-163">
+      <div class="why-img" style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b7561417d453cceebe2474_IMG_2299%20(1).jpg')"></div>
+      <div class="div-block-165">
+        <h3 class="heading-54">Une méthodologie premium pour un streaming sans faille</h3>
+        <div class="rich-text-block-black w-richtext">
+          <p class="paragraph-32">Chaque prestation de live streaming passe par une méthodologie éprouvée en plusieurs étapes. En amont de votre événement, nos équipes réalisent une étude du site : bande passante, connexion internet, disposition des cameras, éclairage, sonorisation et flux des participants. Nous concevons un storyboard de la diffusion - transitions, habillage graphique, gestion des intervenants, interaction avec l&#x27;audience via le chat et les réseaux sociaux. En amont, une phase de test valide l&#x27;ensemble du dispositif technique. Le jour de l&#x27;événement, notre régie vidéo pilote la retransmission en temps réel avec la même rigueur que nos productions pour <a href="https://www.hstories.fr/diffusion-en-direct-emission-studio" class="link-51"><strong>LVMH et l&#x27;association LIVE</strong></a>. Cette exigence nous permet de garantir une diffusion en direct sans incident, même dans des contextes complexes ou avec des délais de quelques jours seulement. Chaque outil technique de notre dispositif - cameras, régie, encodeurs, réseau - fait l&#x27;objet de tests pour assurer la qualité du contenu diffusé. Notre projet d&#x27;événement inclut des solutions de confidentialité adaptées aux diffusions sur plateformes événementielles privées avec accès restreint via un lien sécurisé. La coordination entre notre équipe de réalisation, les opérateurs cameras et les intervenants permet de créer une expérience de diffusion en direct fluide et professionnelle, quel que soit le nombre de plateformes simultanées.</p>
+        </div>
+      </div>
+    </div>
+    <div class="div-block-163">
+      <div class="div-block-165 invert">
+        <h3 class="heading-54">Ils nous font confiance pour leurs événements en direct</h3>
+        <div class="w-richtext">
+          <p class="paragraph-32">Les plus grandes Maisons et institutions font appel à H.stories pour la captation vidéo et le live streaming de chaque <a href="https://www.hstories.fr/evenement-luxe" class="link-51"><strong>événement de luxe</strong></a> stratégique. Notre agence a accompagné <strong>LVMH</strong> pendant plus de 7 ans, produit la retransmission en direct d&#x27;un événement avec le <strong>Président Emmanuel Macron</strong>, et assuré l&#x27;organisation des journées presse <strong>EssilorLuxottica</strong> 4 années consécutives avec réalisation audiovisuelle complète. Pour <strong>Louis Vuitton</strong>, nous avons produit plus de 34 événements - y compris des activations où le nombre d&#x27;invités a triplé en 24 heures, sans aucune perte de qualité. Nous mettons notre savoir-faire technique au service d&#x27;entreprises qui exigent un niveau de production broadcast pour chaque événement diffusé en direct, sans limite de complexité. Notre expertise événementielle en <a href="https://www.hstories.fr/conception-production-evenement" class="link-51"><strong>conception et production d&#x27;événement</strong></a> nous distingue d&#x27;un simple loueur de matériel : nous pouvons réaliser des solutions de live streaming sur mesure pour chaque projet d&#x27;événement, de la prestation de captation à la diffusion multi-plateforme. Notre rôle de <a href="https://www.hstories.fr/prestataire-technique-evenementiel-paris" class="link-51"><strong>prestataire technique événementiel</strong></a> nous positionne comme un interlocuteur unique pour la captation, la réalisation et la diffusion en direct de vos contenus vidéo les plus exigeants. L&#x27;image de marque de chaque entreprise est sublimée par la qualité de nos techniques de production vidéo.</p>
+        </div>
+      </div>
+      <div class="why-img" style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b7446d7301c8334853e161_IMG_0116%20(1).jpg')"></div>
+    </div>
+  </div>
+</div>
+<div data-w-id="fc671a5d-testimonial" style="opacity:1" class="div-block-158">
+  <div class="text-block-27">Temoignage client</div>
+  <p class="paragraph-34">"3 ans qu&#x27;H.stories nous accompagne dans le cadre de nos duplex à travers la France. Studio, régie déportée, création plateau Hicham sait tout faire."</p>
+  <div class="text-block-28">LIVE</div>
+</div>
+<div class="div-block-153 top-margin">
+  <div id="w-node-_9951c9f8-0000-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072dbe845a734a24af65_lvmh-logo.avif" loading="lazy" alt="LVMH Logo" class="image-9"/></div>
+  <div id="w-node-_9951c9f8-0001-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63f773b9767a6366212fe81b_Louis_Vuitton_logo.avif" loading="lazy" alt="Louis Vuitton Logo" class="image-10"/></div>
+  <div id="w-node-_9951c9f8-0002-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072ddaa242a45d57c4a4_MoetHennessy-logo.avif" loading="lazy" alt="Moët Hennessy Logo" class="image-11"/></div>
+  <div id="w-node-_9951c9f8-0003-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072e6e9a7aafe45aa5aa_Paco%20Rabanne%20Logo.avif" loading="lazy" alt="Paco Rabanne Logo" class="image-12"/></div>
+  <div id="w-node-_9951c9f8-0004-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072d959ad14b3ae4fe8f_Luxottica_logo_blue_background.png" loading="lazy" alt="Luxottica Logo" class="image-13"/></div>
+  <div id="w-node-_9951c9f8-0005-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072cf8d2ff42f28c2815_Logo_EssilorLuxottica.svg.avif" loading="lazy" alt="EssilorLuxottica Logo" class="image-14"/></div>
+  <div id="w-node-_9951c9f8-0006-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072c6352c23b97e32695_L%27Ore%CC%81al_logo.svg.avif" loading="lazy" alt="L&#x27;Oréal Logo" class="image-15"/></div>
+  <div id="w-node-_9951c9f8-0007-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072d29ed297ef53ab87f_Me%CC%81tiers%20d%E2%80%99excellence_LVMH_.avif" loading="lazy" alt="Métiers d&#x27;excellence LVMH Logo" class="image-16"/></div>
+  <div id="w-node-_9951c9f8-0008-01554d94"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072cf8d2ff6bf78c2814_Kenzo-logo.avif" loading="lazy" alt="Kenzo Logo" class="image-17"/></div>
+  <div id="w-node-_9951c9f8-0009-01554d94" class="div-block-170"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072c31df2f1fa1ebdfcb_Essilor-Logo.wine.avif" loading="lazy" alt="Essilor Logo" class="image-18"/></div>
+</div>
+<div data-w-id="473cd1d8-cta" class="div-block-160">
+  <div class="div-block-161 lille" style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b7583b576cc197f4e22420_image00018%20(1).jpeg');background-position:50%;background-size:cover"></div>
+  <div class="div-block-159">
+    <h3 class="heading-55">Contactez H.stories pour vos projets de live streaming</h3>
+    <p class="paragraph-35">Vous souhaitez diffuser votre prochain événement en direct auprès d&#x27;un large public ? Découvrez nos solutions dynamiques de live streaming sur mesure, de la captation vidéo à la retransmission sur les réseaux sociaux. Prenez contact avec Hicham pour un premier échange sur votre projet d&#x27;événement et demandez votre devis.</p>
+    <a href="https://www.hstories.fr/demande-de-devis" class="button-9 full w-button">demande de devis</a>
+  </div>
+</div>
+<div class="div-block-201">
+  <div class="div-block-202">
+    <h2 class="heading-56 black">Les questions les plus posées</h2>
+    <div class="div-block-203"></div>
+  </div>
+  <div class="frequently">
+    <div data-w-id="faq-03095" class="div-faq dark">
+      <div class="div-block-260">
+        <div class="text-block-40 black">Qu&#x27;est-ce qui fait de H.stories un partenaire live streaming de référence ?</div>
+        <div class="arrow-faq"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/68ac41bc05234ac5769aaeb4_Group%20439.svg" loading="lazy" alt="" class="image-56"/></div>
+      </div>
+      <div class="faq-content">
+        <div class="rich-text-block-10 w-richtext">
+          <p class="faq-parqagraph black">Notre positionnement de <strong>partenaire live streaming</strong> repose sur une double expertise : la maîtrise de la captation vidéo et de la régie en direct, combinée à une compréhension fine des codes du luxe et de l&#x27;événementiel haut de gamme. Contrairement à un simple loueur de matériel, nous concevons chaque production de live streaming comme une réalisation audiovisuelle complète - habillage graphique, contenu éditorial, gestion des intervenants et interaction avec le public sur les réseaux sociaux et les médias. Plus de <strong>50 productions de diffusion en direct sans incident</strong> pour l&#x27;association LIVE et un partenariat de 7+ ans avec LVMH témoignent de cette exigence de qualité.</p>
+        </div>
+      </div>
+    </div>
+    <div data-w-id="faq-75912" class="div-faq dark">
+      <div class="div-block-260">
+        <div class="text-block-40 black">Quels types d&#x27;événements peut-on diffuser en live streaming avec H.stories ?</div>
+        <div class="arrow-faq"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/68ac41bc05234ac5769aaeb4_Group%20439.svg" loading="lazy" alt="" class="image-56"/></div>
+      </div>
+      <div class="faq-content">
+        <div class="rich-text-block-10 w-richtext">
+          <p class="faq-parqagraph black">Nous produisons la vidéo en direct de conférences de presse, séminaires d&#x27;entreprise, lancements de produits, défilés, galas, masterclasses et formats hybrides. Notre expérience couvre des formats allant de l&#x27;émission intimiste en plateau à la retransmission multi-villes en duplex. Pour l&#x27;association LIVE, nous avons connecté jusqu&#x27;à <strong>6 villes simultanément</strong> avec des intervenants comme Delphine Arnault et Alain Ducasse. Chaque événement bénéficie d&#x27;une solution technique de captation vidéo et de streaming adaptée à l&#x27;audience et aux objectifs de communication de l&#x27;entreprise. La création de vidéos de replay et d&#x27;extraits pour les médias complète chaque prestation événementielle.</p>
+        </div>
+      </div>
+    </div>
+    <div data-w-id="faq-78563" class="div-faq dark">
+      <div class="div-block-260">
+        <div class="text-block-40 black">Sur quelles plateformes H.stories diffuse-t-elle vos événements en direct ?</div>
+        <div class="arrow-faq"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/68ac41bc05234ac5769aaeb4_Group%20439.svg" loading="lazy" alt="" class="image-56"/></div>
+      </div>
+      <div class="faq-content">
+        <div class="rich-text-block-10 w-richtext">
+          <p class="faq-parqagraph black">Notre régie gère la diffusion en direct sur l&#x27;ensemble des plateformes majeures : <strong>YouTube</strong>, <strong>LinkedIn</strong>, <strong>Facebook</strong>, <strong>Twitch</strong>, <strong>Zoom</strong>, <strong>Teams</strong>, sites web dédiés et plateformes événementielles privées avec accès restreint. Le flux RTMP permet un streaming simultané multi-destination pour maximiser votre audience sur internet, la TV interne et les réseaux sociaux. Le choix de la plateforme dépend de votre stratégie de contenu et du public visé. Nous produisons aussi des vidéos de replay et du contenu adapté aux médias et réseaux sociaux en post-production. YouTube reste la plateforme la plus utilisée pour diffuser un événement en streaming. Notre savoir-faire spécialisé en vidéo et en captation, combiné aux technologies de streaming les plus avancées, garantit une grande expérience pour chaque camera déployée sur le terrain.</p>
+        </div>
+      </div>
+    </div>
+    <div data-w-id="faq-65893" class="div-faq dark">
+      <div class="div-block-260">
+        <div class="text-block-40 black">Comment H.stories garantit-elle une diffusion en direct sans incident ?</div>
+        <div class="arrow-faq"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/68ac41bc05234ac5769aaeb4_Group%20439.svg" loading="lazy" alt="" class="image-56"/></div>
+      </div>
+      <div class="faq-content">
+        <div class="rich-text-block-10 w-richtext">
+          <p class="faq-parqagraph black">Notre méthodologie repose sur l&#x27;anticipation : étude du site en amont, test de connexion internet, validation du dispositif de cameras la veille de l&#x27;événement. Le jour J, notre équipe pilote la production en temps réel avec un réalisateur dédié, des opérateurs cameras expérimentés et un dispositif de secours. Cette rigueur nous a permis d&#x27;assurer plus de <strong>50 productions de live streaming consécutives sans incident</strong> pour des clients comme l&#x27;association LIVE, dans des contextes allant du plateau au site extérieur, avec des délais parfois réduits à quelques jours. L&#x27;expérience vidéo et la qualité de chaque événement restent notre priorité, quelle que soit la distance entre le lieu de captation et les professionnels qui suivent la diffusion. Notre savoir technique éprouvé, de la lumière au son, fait la différence sur chaque production.</p>
+        </div>
+      </div>
+    </div>
+    <div data-w-id="faq-53707" class="div-faq dark">
+      <div class="div-block-260">
+        <div class="text-block-40 black">Quel budget et quel délai prévoir pour un live streaming ?</div>
+        <div class="arrow-faq"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/68ac41bc05234ac5769aaeb4_Group%20439.svg" loading="lazy" alt="" class="image-56"/></div>
+      </div>
+      <div class="faq-content">
+        <div class="rich-text-block-10 w-richtext">
+          <p class="faq-parqagraph black">Le budget d&#x27;un live streaming varie selon la complexité du dispositif : nombre de cameras HD, régie, habillage graphique et nombre de plateformes de diffusion simultanées. Chaque devis est adapté à votre projet. Côté délais : comptez <strong>2 à 3 semaines</strong> pour un streaming simple, <strong>4 à 6 semaines</strong> pour un format hybride sur site. Notre réactivité nous permet toutefois d&#x27;intervenir en quelques jours - un atout important que des entreprises comme Louis Vuitton et LVMH reconnaissent.</p>
+        </div>
+      </div>
+    </div>
+    <div data-w-id="faq-55435" class="div-faq dark">
+      <div class="div-block-260">
+        <div class="text-block-40 black">Comment se déroule le premier contact avec H.stories pour un projet de live streaming ?</div>
+        <div class="arrow-faq"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/68ac41bc05234ac5769aaeb4_Group%20439.svg" loading="lazy" alt="" class="image-56"/></div>
+      </div>
+      <div class="faq-content">
+        <div class="rich-text-block-10 w-richtext">
+          <p class="faq-parqagraph black">La collaboration débute par une phase d&#x27;écoute, et c&#x27;est Hicham, le fondateur, qui est présent au premier rendez-vous. Nous écoutons votre besoin - type d&#x27;événement, audience visée, plateformes de diffusion souhaitées, niveau de qualité attendu - et nous concevons une proposition adaptée. Une fois validée, notre équipe prend en charge l&#x27;organisation complète de votre live streaming : repérage du site, installation des cameras, tests de lien vidéo, pilotage de la diffusion en direct le jour J. Chaque devis est personnalisé selon la complexité de votre projet d&#x27;événement.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div-block-207"></div>
+</div>
+<div data-w-id="169b9c7d-journal" style="opacity:1" class="div-block-139 ville">
+  <div class="div-block-108">
+    <h2 class="heading-42 dark">Les derniers articles de notre journal</h2>
+  </div>
+  <div data-w-id="169b9c7d-journal-list" class="div-block-90 journal">
+    <div class="w-dyn-list">
+      <div role="list" class="collection-list-6 _4-column w-dyn-items">
+        <div role="listitem" class="w-dyn-item">
+          <a href="/journal/production-audiovisuelle-en-direct" class="link-block-6 w-inline-block">
+            <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67bc536676fcf92ad44b2deb_Screenshot%202025-02-24%20at%2012.07.58%20PM.jpg')" class="image-for-page _4"></div>
+            <div class="div-block-87 _4">
+              <div class="div-block-88">
+                <div class="text-block-24">Évènement d'entreprise</div>
+                <div class="text-block-24">&bull;</div>
+                <div class="text-block-24">February 19, 2026</div>
+              </div>
+              <div class="div-block-89">
+                <h2 class="heading-37 _4">Production audiovisuelle en direct</h2>
+                <p class="paragraph-15 w-dyn-bind-empty"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div role="listitem" class="w-dyn-item">
+          <a href="/journal/studios-livestreaming-paris" class="link-block-6 w-inline-block">
+            <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/6929810730f6bf8794259f9f_studioparishstories3.webp')" class="image-for-page _4"></div>
+            <div class="div-block-87 _4">
+              <div class="div-block-88">
+                <div class="text-block-24">Évènement d'entreprise</div>
+                <div class="text-block-24">&bull;</div>
+                <div class="text-block-24">February 19, 2026</div>
+              </div>
+              <div class="div-block-89">
+                <h2 class="heading-37 _4">Top 5 studios livestreaming Paris</h2>
+                <p class="paragraph-15 w-dyn-bind-empty"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div role="listitem" class="w-dyn-item">
+          <a href="/journal/la-montee-en-puissance-du-livestreaming-pour-les-evenements-dentreprise" class="link-block-6 w-inline-block">
+            <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b881b020c425646ffc23ab_IMG_9733.jpg')" class="image-for-page _4"></div>
+            <div class="div-block-87 _4">
+              <div class="div-block-88">
+                <div class="text-block-24">Évènement d'entreprise</div>
+                <div class="text-block-24">&bull;</div>
+                <div class="text-block-24">February 19, 2026</div>
+              </div>
+              <div class="div-block-89">
+                <h2 class="heading-37 _4">La montée en puissance du livestreaming</h2>
+                <p class="paragraph-15 w-dyn-bind-empty"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div role="listitem" class="w-dyn-item">
+          <a href="/journal/comment-organiser-une-conference-de-presse" class="link-block-6 w-inline-block">
+            <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b7583b576cc197f4e22420_image00018%20(1).jpeg')" class="image-for-page _4"></div>
+            <div class="div-block-87 _4">
+              <div class="div-block-88">
+                <div class="text-block-24">Évènement d'entreprise</div>
+                <div class="text-block-24">&bull;</div>
+                <div class="text-block-24">February 19, 2026</div>
+              </div>
+              <div class="div-block-89">
+                <h2 class="heading-37 _4">Comment organiser une conférence de presse</h2>
+                <p class="paragraph-15 w-dyn-bind-empty"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<section class="footer-dark">
+  <div class="container-19">
+    <div class="footer-wrapper">
+      <div class="div-block-166">
+        <a href="/" class="footer-brand w-inline-block">
+          <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white.avif" loading="lazy" sizes="(max-width: 479px) 0px, 100vw" srcset="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-500.avif 500w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-800.avif 800w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-1080.avif 1080w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-1600.avif 1600w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-2000.avif 2000w" alt="H.stories Logo" class="image-49"/>
         </a>
-        <div class="div-block-76">
-          <nav role="navigation" class="nav-menu w-nav-menu">
-            <div class="div-block-75">
-              <a href="/stories" class="nav-link w-nav-link">
-                stories
-              </a>
-              <div data-hover="false" data-delay="0" class="dropdown-2 w-dropdown">
-                <div class="nav-link w-dropdown-toggle">
-                  <div class="w-icon-dropdown-toggle">
-                  </div>
-                  <div>
-                    Services
-                  </div>
-                </div>
-                <nav class="dropdown-list-2 w-dropdown-list">
-                  <a href="/conception-production-evenement" class="dropdown-link w-dropdown-link">
-                    Conception et production d’évènement
-                  </a>
-                  <a href="/scenographie-evenementielle" class="dropdown-link w-dropdown-link">
-                    Scénographie évènementielle
-                  </a>
-                  <a href="/activation-de-marque" class="dropdown-link w-dropdown-link">
-                    Activation de marque
-                  </a>
-                  <a href="/diffusion-en-direct-emission-studio" class="dropdown-link w-dropdown-link">
-                    Livestreaming &amp; Emission studio
-                  </a>
-                </nav>
-              </div>
-              <a href="/journal" class="nav-link w-nav-link">
-                Journal
-              </a>
-              <a href="/contact" class="nav-link w-nav-link">
-                Contact
-              </a>
-            </div>
-          </nav>
-          <a aria-label="Instagram H.stories" href="https://www.instagram.com/hstories_event/" target="_blank" class="link-block-2 w-inline-block">
-          </a>
-          <div class="menu-button w-nav-button">
-            <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63f77848f0889fecbaa3c0b0_menu-burger-7.svg" loading="lazy" alt="" class="image-40"/>
+        <div class="text-block-29">Une agence évènementielle à Paris fiable et reconnue </div>
+      </div>
+      <div class="footer-content">
+        <div id="w-node-_2241455d-245b-fea3-2915-a848a4581f40-a4581f3a" class="footer-block">
+          <div class="title-small">STORIES</div>
+          <a href="/stories" class="footer-link">Nos evènements</a>
+          <a href="/vision" class="footer-link">Notre vision</a>
+          <a href="https://www.instagram.com/stories/highlights/18008364184360805/" target="_blank" class="footer-link">Nos témoignages</a>
+        </div>
+        <div id="w-node-_2241455d-245b-fea3-2915-a848a4581f49-a4581f3a" class="footer-block">
+          <div class="title-small">services</div>
+          <a href="/activation-de-marque" class="footer-link">Activation de marque</a>
+          <a href="/conception-production-evenement" class="footer-link">Conception et production d’évènement</a>
+          <a href="/scenographie-evenementielle" class="footer-link">Scénographie évènementielle</a>
+          <a href="/diffusion-en-direct-emission-studio" class="footer-link">Livestreaming &amp; Emission studio</a>
+        </div>
+        <div id="w-node-_2241455d-245b-fea3-2915-a848a4581f5f-a4581f3a" class="footer-block">
+          <div class="title-small">contact</div>
+          <a href="mailto:contact@hstories.fr" class="footer-link">Adresse<br/>‍<br/>68 avenue des champs élysées<br/>75008 Paris </a>
+          <a href="mailto:contact@hstories.fr" class="footer-link">contact@hstories.fr</a>
+        </div>
+        <div id="w-node-c13000e5-6190-7c80-56e9-a081a3d04747-a4581f3a" class="footer-block">
+          <div class="title-small">Suivez nous</div>
+          <div class="footer-social-block">
+            <a href="https://www.instagram.com/hstories_event/" target="_blank" class="footer-social-link w-inline-block"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63c9f615f8d2ff23ac8ad511_011-instagram%20copy.avif" loading="lazy" alt="Instagram H.stories" class="image-50"/></a>
+            <a href="https://www.tiktok.com/@h.stories_event" target="_blank" class="footer-social-link w-inline-block"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/670c351a6039543847d134a4_tik-tok.svg" loading="lazy" alt="Tiktok H.stories" class="image-50"/></a>
+            <a href="https://www.youtube.com/@H.stories_event" target="_blank" class="footer-social-link w-inline-block"><img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/670c353d3d0efc6894e84d70_youtube.svg" loading="lazy" alt="Youtube H.stories" class="image-50 nih"/></a>
           </div>
         </div>
       </div>
     </div>
-    <section>
-      <div data-w-id="69c66a54-b191-670c-bd80-5c3d8b5184ae" style="opacity:1;background-image:url('https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/68eb6b30079b8a74059d493e_Livestreaminghstories.webp');background-position:50%;background-repeat:no-repeat;background-size:cover;width:80%;height:300px;margin-top:100px;margin-left:auto" class="div-block-127 _4">
-      </div>
-      <div class="div-block-128">
-        <h1 data-w-id="69c66a54-b191-670c-bd80-5c3d8b5184b0" style="opacity:1" class="heading-50">
-          Prestataire de live streaming pour vos événements d&#x27;exception
-        </h1>
-      </div>
-      <div data-w-id="69c66a54-b191-670c-bd80-5c3d8b5184b2" style="opacity:1;background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67bc536676fcf92ad44b2deb_Screenshot%202025-02-24%20at%2012.07.58%20PM.jpg');background-position:50%;background-repeat:no-repeat;background-size:cover;width:70%;height:70px" class="div-block-129 _4">
-      </div>
-    </section>
-    <section>
-      <div class="w-layout-blockcontainer container-18 w-container">
-        <div data-w-id="69c66a54-b191-670c-bd80-5c3d8b5184b5" style="opacity:1" class="div-block-130">
-          <div class="rich-text-block-2 _2 w-richtext">
-            <p class="paragraph-23">
-              H.stories est une <a href="https://www.hstories.fr/agence-audiovisuel-evenement-live-stream" class="link-26"><strong>agence de production audiovisuelle</strong></a> et <strong>prestataire live streaming</strong> basée à Paris, spécialisée dans la captation vidéo et la diffusion en direct d&#x27;événements pour les marques de luxe, les entreprises et les institutions.
-            </p>
-          </div>
-          <div class="rich-text-block-2 _2 w-richtext">
-            <p class="paragraph-23">
-              Depuis plus de 11 ans et 350 projets réalisés, nous concevons des dispositifs complets de <strong>live streaming</strong> - cameras, habillage graphique, retransmission multi-plateforme - qui transforment chaque événement en une expérience de diffusion en direct de qualité broadcast. Notre agence a produit plus de <strong>50 diffusions live sans incident</strong> pour l&#x27;association LIVE de Brigitte Macron, et accompagné les groupes LVMH, Louis Vuitton et EssilorLuxottica dans la diffusion vidéo de leurs événements stratégiques en direct.
-            </p>
-          </div>
-        </div>
-        <div class="div-block-133">
-          <div data-w-id="69c66a54-b191-670c-bd80-5c3d8b5184bb" style="opacity:1" class="div-block-134">
-            <div class="div-block-135 _4" style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b7583b576cc197f4e22420_image00018%20(1).jpeg');background-position:50%;background-repeat:no-repeat;background-size:cover;flex:1;min-height:200px">
-            </div>
-            <div class="div-block-135 _4-2" style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b881b020c425646ffc23ab_IMG_9733.jpg');background-position:50%;background-repeat:no-repeat;background-size:cover;flex:1;min-height:200px">
-            </div>
-          </div>
-          <div class="div-block-136">
-            <div data-w-id="f45c272b-91d4-c30d-69f1-7d20890c4a27" style="opacity:1" class="rich-text-block-8 w-richtext">
-              <p class="paragraph-23">
-                <a href="https://www.hstories.fr/" class="link-26"><strong>nos services</strong></a> | <a href="https://www.hstories.fr/demande-de-devis" class="link-26"><strong>demandez un devis</strong></a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="div-block-167 services">
-          <div class="w-dyn-list">
-            <div role="list" class="collection-list-8 w-dyn-items">
-              <div id="w-node-_8eb0fdc9-c486-97ba-affa-86caa1cd51e9-prestataire-01" role="listitem" class="collection-item-18 w-dyn-item">
-                <a style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67bc536676fcf92ad44b2deb_Screenshot%202025-02-24%20at%2012.07.58%20PM.jpg')" href="/events/livestreaming-studio-paris" class="link-block-9 w-inline-block">
-                  <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67bc55496558bbade3a91a6b_IMG_3952%20(1).jpg')" class="im-age-fond">
-                  </div>
-                  <div data-w-id="8eb0fdc9-c486-97ba-affa-86caa1cd51ec" class="div-block-149">
-                    <img src="https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/63ca474531df2fbbd6f04e21_Live%20L%E2%80%99institut%20des%20Vocations%20pour%20l%E2%80%99Emploi_.png" loading="lazy" alt="" class="image-51"/>
-                  </div>
-                  <div class="titre-de-levent">
-                    <div class="text-block-30">
-                      LIVE Masterclasses livestreaming
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div id="w-node-_8eb0fdc9-c486-97ba-affa-86caa1cd51e9-prestataire-02" role="listitem" class="collection-item-18 w-dyn-item">
-                <a style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b881b020c425646ffc23ab_IMG_9733.jpg')" href="/events/inauguration-campus-live-reims-bernard-arnault-mme-brigitte-macron-lvmh" class="link-block-9 w-inline-block">
-                  <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b88620722a106d782b33b5_IMG_9636.jpg')" class="im-age-fond">
-                  </div>
-                  <div data-w-id="8eb0fdc9-c486-97ba-affa-86caa1cd51ec" class="div-block-149">
-                    <img src="https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/63ca474531df2fbbd6f04e21_Live%20L%E2%80%99institut%20des%20Vocations%20pour%20l%E2%80%99Emploi_.png" loading="lazy" alt="" class="image-51"/>
-                  </div>
-                  <div class="titre-de-levent">
-                    <div class="text-block-30">
-                      LIVE Inauguration Campus Reims
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div id="w-node-_8eb0fdc9-c486-97ba-affa-86caa1cd51e9-prestataire-03" role="listitem" class="collection-item-18 w-dyn-item">
-                <a style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67bc536676fcf92ad44b2deb_Screenshot%202025-02-24%20at%2012.07.58%20PM.jpg')" href="/events/livestreaming-studio-paris" class="link-block-9 w-inline-block">
-                  <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67bc55496558bbade3a91a6b_IMG_3952%20(1).jpg')" class="im-age-fond">
-                  </div>
-                  <div data-w-id="8eb0fdc9-c486-97ba-affa-86caa1cd51ec" class="div-block-149">
-                    <img src="https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/63ca474531df2fbbd6f04e21_Live%20L%E2%80%99institut%20des%20Vocations%20pour%20l%E2%80%99Emploi_.png" loading="lazy" alt="" class="image-51"/>
-                  </div>
-                  <div class="titre-de-levent">
-                    <div class="text-block-30">
-                      LVMH Blueprint
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div id="w-node-_8eb0fdc9-c486-97ba-affa-86caa1cd51e9-prestataire-04" role="listitem" class="collection-item-18 w-dyn-item">
-                <a style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/63ca502ebe845ad9ef29c4e3_Kids5%20copy.JPG')" href="/events/essilorluxottica-journee-presses-fw22" class="link-block-9 w-inline-block">
-                  <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/64396fac2c64d3f6c0ce45e8_H.stories10%20Essilorluxottica-Laurinepaumard.jpg')" class="im-age-fond">
-                  </div>
-                  <div data-w-id="8eb0fdc9-c486-97ba-affa-86caa1cd51ec" class="div-block-149">
-                    <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072cf8d2ff42f28c2815_Logo_EssilorLuxottica.svg.avif" loading="lazy" alt="" class="image-51"/>
-                  </div>
-                  <div class="titre-de-levent">
-                    <div class="text-block-30">
-                      EssilorLuxottica Journées Presse SS22
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div id="w-node-_8eb0fdc9-c486-97ba-affa-86caa1cd51e9-prestataire-05" role="listitem" class="collection-item-18 w-dyn-item">
-                <a style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b881b020c425646ffc23ab_IMG_9733.jpg')" href="/events/inauguration-campus-live-reims-bernard-arnault-mme-brigitte-macron-lvmh" class="link-block-9 w-inline-block">
-                  <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b88620722a106d782b33b5_IMG_9636.jpg')" class="im-age-fond">
-                  </div>
-                  <div data-w-id="8eb0fdc9-c486-97ba-affa-86caa1cd51ec" class="div-block-149">
-                    <img src="https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/63ca474531df2fbbd6f04e21_Live%20L%E2%80%99institut%20des%20Vocations%20pour%20l%E2%80%99Emploi_.png" loading="lazy" alt="" class="image-51"/>
-                  </div>
-                  <div class="titre-de-levent">
-                    <div class="text-block-30">
-                      LIVE Inauguration Campus Le Havre
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div id="w-node-_8eb0fdc9-c486-97ba-affa-86caa1cd51e9-prestataire-06" role="listitem" class="collection-item-18 w-dyn-item">
-                <a style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67bc536676fcf92ad44b2deb_Screenshot%202025-02-24%20at%2012.07.58%20PM.jpg')" href="/events/livestreaming-studio-paris" class="link-block-9 w-inline-block">
-                  <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67bc55496558bbade3a91a6b_IMG_3952%20(1).jpg')" class="im-age-fond">
-                  </div>
-                  <div data-w-id="8eb0fdc9-c486-97ba-affa-86caa1cd51ec" class="div-block-149">
-                    <img src="https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/63ca474531df2fbbd6f04e21_Live%20L%E2%80%99institut%20des%20Vocations%20pour%20l%E2%80%99Emploi_.png" loading="lazy" alt="" class="image-51"/>
-                  </div>
-                  <div class="titre-de-levent">
-                    <div class="text-block-30">
-                      Under Armour x Teddy Riner
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="div-block-186">
-          <div class="div-block-190">
-            <div data-w-id="01b84a1b-a579-7969-b733-4e46089d7f18" class="w-layout-grid grid-3 new">
-              <div id="w-node-_089d7f19-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072dbe845a734a24af65_lvmh-logo.avif" loading="lazy" alt="LVMH Logo" class="image-9"/>
-              </div>
-              <div id="w-node-_089d7f1b-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63f773b9767a6366212fe81b_Louis_Vuitton_logo.avif" loading="lazy" alt="Louis Vuitton Logo" class="image-10"/>
-              </div>
-              <div id="w-node-_089d7f1d-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072ddaa242a45d57c4a4_MoetHennessy-logo.avif" loading="lazy" alt="Moët Hennessy Logo" class="image-11"/>
-              </div>
-              <div id="w-node-_089d7f1f-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072e6e9a7aafe45aa5aa_Paco%20Rabanne%20Logo.avif" loading="lazy" alt="Paco Rabanne Logo" class="image-12"/>
-              </div>
-              <div id="w-node-_089d7f21-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072d959ad14b3ae4fe8f_Luxottica_logo_blue_background.png" loading="lazy" alt="Luxottica Logo" class="image-13"/>
-              </div>
-              <div id="w-node-_089d7f23-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072cf8d2ff42f28c2815_Logo_EssilorLuxottica.svg.avif" loading="lazy" alt="EssilorLuxottica Logo" class="image-14"/>
-              </div>
-              <div id="w-node-_089d7f25-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072c6352c23b97e32695_L%27Ore%CC%81al_logo.svg.avif" loading="lazy" alt="L&#x27;Oréal Logo" class="image-15"/>
-              </div>
-              <div id="w-node-_089d7f27-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072d29ed297ef53ab87f_Me%CC%81tiers%20d%E2%80%99excellence_LVMH_.avif" loading="lazy" alt="Métiers d&#x27;excellence LVMH Logo" class="image-16"/>
-              </div>
-              <div id="w-node-_089d7f29-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072cf8d2ff6bf78c2814_Kenzo-logo.avif" loading="lazy" alt="Kenzo Logo" class="image-17"/>
-              </div>
-              <div id="w-node-_089d7f2b-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072c31df2f1fa1ebdfcb_Essilor-Logo.wine.avif" loading="lazy" alt="Essilor Logo" class="image-18"/>
-              </div>
-              <div id="w-node-_089d7f2d-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/64217aa183350bf3b58391e0_persol-removebg-preview.avif" loading="lazy" alt="Persol Logo" class="image-19"/>
-              </div>
-              <div id="w-node-_089d7f2f-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/64217aa1472c000a70951cc6_Nikon-Logo-PNG-Clipart-Background.avif" loading="lazy" alt="Nikon Logo" class="image-20"/>
-              </div>
-              <div id="w-node-_089d7f31-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072c069ed63698a111de_Live%20L%E2%80%99institut%20des%20Vocations%20pour%20l%E2%80%99Emploi_.png" loading="lazy" alt="LIVE Logo" class="image-21"/>
-              </div>
-              <div id="w-node-_089d7f33-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072e959ad17698e4fe91_Under_armour_logo.svg.avif" loading="lazy" alt="Under Armour Logo" class="image-23"/>
-              </div>
-              <div id="w-node-_089d7f35-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63ca072c2094416383805cdc_logo_48475eb8-8ba0-4188-80f9-70edec460abc%20copy.avif" loading="lazy" alt="LoveShackFancy Logo" class="image-35"/>
-              </div>
-              <div id="w-node-_089d7f37-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/6710f8d14201df8a7c12a6e0_Chapel%20Down%20Logo.avif" loading="lazy" alt="Chapel Down Logo" class="image-18 _2"/>
-              </div>
-              <div id="w-node-_089d7f39-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/6710f9faee855a49b23f2363_Urban-Outfitters-Logo.avif" loading="lazy" alt="Urban Outfitters Logo" class="image-18 _3"/>
-              </div>
-              <div id="w-node-_089d7f3b-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/67135a4636b5b4a1ac1cb7c4_63ca53b1959ad1d3e9ea3c4f_Loewe_logo%202.avif" loading="lazy" alt="Loewe Logo" class="image-18-copy"/>
-              </div>
-              <div id="w-node-_089d7f3d-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/67135ae19c5447b9553870a1_Juicy_Couture_logo%201.avif" loading="lazy" alt="Juicy Couture Logo" class="fdvxvc"/>
-              </div>
-              <div id="w-node-_089d7f3f-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/67135bcbb8e666f99445391e_Oakley_logo%201.avif" loading="lazy" alt="Oakley Logo" class="zldfngknldflk"/>
-              </div>
-              <div id="w-node-_59eb0c9a-053a-cc53-babf-18b71dd2dfd3-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/688b296959a1e0b07d26e53e_Site-logo.webp" loading="lazy" alt="Ray-Ban Logo" class="image-18 _2"/>
-              </div>
-              <div id="w-node-_b2c3387d-b75e-77f0-7020-520cf1059693-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/688b2aaf2916b8a2a3337aa3_Interparfumhstories.avif" loading="lazy" alt="Interparfums Logo" class="image-18 _2"/>
-              </div>
-              <div id="w-node-_aa6f01c9-8c07-0061-0db0-64d0b0bad681-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/688b2aaf5c288ecbde83e255_R8GH.stories.avif" loading="lazy" alt="R8G Esport Logo" class="image-18 _2"/>
-              </div>
-              <div id="w-node-_96410673-7358-a30e-d207-5280b7205cbc-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/68a31af01b6574571b6154da_duran.width-640.format-jpeg_D0D4lrOyrTPPXl0Y.png" loading="lazy" alt="Duran Lantink Logo" class="image-18 _2"/>
-              </div>
-              <div id="w-node-_3e436d38-53ff-bfab-9c88-09f9a7638ad0-089d7f18">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/68a31b7b53a9370c59252e02_625482_75ed558a07a04a6e8fa63de78248c0d4~mv2_d_5000_5000_s_4_2.avif" loading="lazy" alt="Notion Magazine Logo" class="image-18 _2"/>
-              </div>
-            </div>
-          </div>
-          <div data-w-id="baf8fbcb-9ba4-3013-5f55-da1904f30e2a" style="opacity:1" class="div-block-158">
-            <div class="text-block-27 white">
-              Temoignage client
-            </div>
-            <p class="paragraph-34 white">
-              "3 ans qu&#x27;H.stories nous accompagne dans le cadre de nos duplex à travers la France. Studio, régie déportée, création plateau Hicham sait tout faire."
-            </p>
-            <div class="text-block-28 white">
-              LIVE
-            </div>
-          </div>
-          <div data-w-id="baf8fbcb-9ba4-3013-5f55-da1904f30e34" style="opacity:1" class="div-block-160">
-            <div class="div-block-161 services" style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b7583b576cc197f4e22420_image00018%20(1).jpeg');background-position:50%;background-size:cover">
-            </div>
-            <div class="div-block-159 white">
-              <h2 class="heading-55 black">
-                Contactez-nous
-              </h2>
-              <p class="paragraph-35 black">
-                Vous souhaitez diffuser votre prochain événement en direct auprès d&#x27;un large public ? Découvrez nos solutions dynamiques de live streaming sur mesure, de la captation vidéo à la retransmission sur les réseaux sociaux. Prenez contact avec Hicham pour un premier échange sur votre projet d&#x27;événement et demandez votre devis.
-              </p>
-              <a href="/demande-de-devis" class="button-9 full black top w-button">
-                demande de devis
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="div-block-201">
-          <div class="div-block-202">
-            <h2 class="heading-56">
-              Les questions les plus posées
-            </h2>
-            <div class="div-block-203">
-            </div>
-          </div>
-          <div class="frequently">
-            <div data-w-id="d6080a95-e38f-4e8a-c302-2c88a557442d" class="div-faq">
-              <div class="div-block-260">
-                <div class="text-block-40">
-                  Qu&#x27;est-ce qui fait de H.stories un partenaire live streaming de référence ?
-                </div>
-                <div class="arrow-faq">
-                  <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/6745e65b68879360c610c733_Arrow%20down.svg" loading="lazy" alt="" class="new-arrow"/>
-                </div>
-              </div>
-              <div class="faq-content">
-                <div class="rich-text-block-10 w-richtext">
-                  <p class="paragraph-209">
-                                      Notre positionnement de <strong>partenaire live streaming</strong> repose sur une double expertise : la maîtrise de la captation vidéo et de la régie en direct, combinée à une compréhension fine des codes du luxe et de l&#x27;événementiel haut de gamme. Contrairement à un simple loueur de matériel, nous concevons chaque production de live streaming comme une réalisation audiovisuelle complète - habillage graphique, contenu éditorial, gestion des intervenants et interaction avec le public sur les réseaux sociaux et les médias. Plus de <strong>50 productions de diffusion en direct sans incident</strong> pour l&#x27;association LIVE et un partenariat de 7+ ans avec LVMH témoignent de cette exigence de qualité.
-                                    </p>
-                </div>
-              </div>
-            </div>
-            <div data-w-id="d6080a95-e38f-4e8a-c302-2c88a557442d" class="div-faq">
-              <div class="div-block-260">
-                <div class="text-block-40">
-                  Quels types d&#x27;événements peut-on diffuser en live streaming avec H.stories ?
-                </div>
-                <div class="arrow-faq">
-                  <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/6745e65b68879360c610c733_Arrow%20down.svg" loading="lazy" alt="" class="new-arrow"/>
-                </div>
-              </div>
-              <div class="faq-content">
-                <div class="rich-text-block-10 w-richtext">
-                  <p class="paragraph-209">
-                                      Nous produisons la vidéo en direct de conférences de presse, séminaires d&#x27;entreprise, lancements de produits, défilés, galas, masterclasses et formats hybrides. Notre expérience couvre des formats allant de l&#x27;émission intimiste en plateau à la retransmission multi-villes en duplex. Pour l&#x27;association LIVE, nous avons connecté jusqu&#x27;à <strong>6 villes simultanément</strong> avec des intervenants comme Delphine Arnault et Alain Ducasse. Chaque événement bénéficie d&#x27;une solution technique de captation vidéo et de streaming adaptée à l&#x27;audience et aux objectifs de communication de l&#x27;entreprise. La création de vidéos de replay et d&#x27;extraits pour les médias complète chaque prestation événementielle.
-                                    </p>
-                </div>
-              </div>
-            </div>
-            <div data-w-id="d6080a95-e38f-4e8a-c302-2c88a557442d" class="div-faq">
-              <div class="div-block-260">
-                <div class="text-block-40">
-                  Sur quelles plateformes H.stories diffuse-t-elle vos événements en direct ?
-                </div>
-                <div class="arrow-faq">
-                  <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/6745e65b68879360c610c733_Arrow%20down.svg" loading="lazy" alt="" class="new-arrow"/>
-                </div>
-              </div>
-              <div class="faq-content">
-                <div class="rich-text-block-10 w-richtext">
-                  <p class="paragraph-209">
-                                      Notre régie gère la diffusion en direct sur l&#x27;ensemble des plateformes majeures : <strong>YouTube</strong>, <strong>LinkedIn</strong>, <strong>Facebook</strong>, <strong>Twitch</strong>, <strong>Zoom</strong>, <strong>Teams</strong>, sites web dédiés et plateformes événementielles privées avec accès restreint. Le flux RTMP permet un streaming simultané multi-destination pour maximiser votre audience sur internet, la TV interne et les réseaux sociaux. Le choix de la plateforme dépend de votre stratégie de contenu et du public visé. Nous produisons aussi des vidéos de replay et du contenu adapté aux médias et réseaux sociaux en post-production. YouTube reste la plateforme la plus utilisée pour diffuser un événement en streaming. Notre savoir-faire spécialisé en vidéo et en captation, combiné aux technologies de streaming les plus avancées, garantit une grande expérience pour chaque camera déployée sur le terrain.
-                                    </p>
-                </div>
-              </div>
-            </div>
-            <div data-w-id="d6080a95-e38f-4e8a-c302-2c88a557442d" class="div-faq">
-              <div class="div-block-260">
-                <div class="text-block-40">
-                  Comment H.stories garantit-elle une diffusion en direct sans incident ?
-                </div>
-                <div class="arrow-faq">
-                  <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/6745e65b68879360c610c733_Arrow%20down.svg" loading="lazy" alt="" class="new-arrow"/>
-                </div>
-              </div>
-              <div class="faq-content">
-                <div class="rich-text-block-10 w-richtext">
-                  <p class="paragraph-209">
-                                      Notre méthodologie repose sur l&#x27;anticipation : étude du site en amont, test de connexion internet, validation du dispositif de cameras la veille de l&#x27;événement. Le jour J, notre équipe pilote la production en temps réel avec un réalisateur dédié, des opérateurs cameras expérimentés et un dispositif de secours. Cette rigueur nous a permis d&#x27;assurer plus de <strong>50 productions de live streaming consécutives sans incident</strong> pour des clients comme l&#x27;association LIVE, dans des contextes allant du plateau au site extérieur, avec des délais parfois réduits à quelques jours. L&#x27;expérience vidéo et la qualité de chaque événement restent notre priorité, quelle que soit la distance entre le lieu de captation et les professionnels qui suivent la diffusion. Notre savoir technique éprouvé, de la lumière au son, fait la différence sur chaque production.
-                                    </p>
-                </div>
-              </div>
-            </div>
-            <div data-w-id="d6080a95-e38f-4e8a-c302-2c88a557442d" class="div-faq">
-              <div class="div-block-260">
-                <div class="text-block-40">
-                  Quel budget et quel délai prévoir pour un live streaming ?
-                </div>
-                <div class="arrow-faq">
-                  <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/6745e65b68879360c610c733_Arrow%20down.svg" loading="lazy" alt="" class="new-arrow"/>
-                </div>
-              </div>
-              <div class="faq-content">
-                <div class="rich-text-block-10 w-richtext">
-                  <p class="paragraph-209">
-                                      Le budget d&#x27;un live streaming varie selon la complexité du dispositif : nombre de cameras HD, régie, habillage graphique et nombre de plateformes de diffusion simultanées. Chaque devis est adapté à votre projet. Côté délais : comptez <strong>2 à 3 semaines</strong> pour un streaming simple, <strong>4 à 6 semaines</strong> pour un format hybride sur site. Notre réactivité nous permet toutefois d&#x27;intervenir en quelques jours - un atout important que des entreprises comme Louis Vuitton et LVMH reconnaissent.
-                                    </p>
-                </div>
-              </div>
-            </div>
-            <div data-w-id="d6080a95-e38f-4e8a-c302-2c88a557442d" class="div-faq">
-              <div class="div-block-260">
-                <div class="text-block-40">
-                  Comment se déroule le premier contact avec H.stories pour un projet de live streaming ?
-                </div>
-                <div class="arrow-faq">
-                  <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/6745e65b68879360c610c733_Arrow%20down.svg" loading="lazy" alt="" class="new-arrow"/>
-                </div>
-              </div>
-              <div class="faq-content">
-                <div class="rich-text-block-10 w-richtext">
-                  <p class="paragraph-209">
-                                      La collaboration débute par une phase d&#x27;écoute, et c&#x27;est Hicham, le fondateur, qui est présent au premier rendez-vous. Nous écoutons votre besoin - type d&#x27;événement, audience visée, plateformes de diffusion souhaitées, niveau de qualité attendu - et nous concevons une proposition adaptée. Une fois validée, notre équipe prend en charge l&#x27;organisation complète de votre live streaming : repérage du site, installation des cameras, tests de lien vidéo, pilotage de la diffusion en direct le jour J. Chaque devis est personnalisé selon la complexité de votre projet d&#x27;événement.
-                                    </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="div-block-207">
-          </div>
-        </div>
-        <div data-w-id="69c66a54-b191-670c-bd80-5c3d8b5184de" style="opacity:1" class="div-block-139">
-          <div class="div-block-108">
-            <h2 class="heading-42 white">
-              Les derniers article de notre journal
-            </h2>
-          </div>
-          <div class="div-block-90 journal">
-            <div class="w-dyn-list">
-              <div role="list" class="collection-list-6 _4-column w-dyn-items">
-                <div role="listitem" class="w-dyn-item">
-                  <a href="/journal/production-audiovisuelle-en-direct" class="link-block-6 w-inline-block">
-                    <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67bc536676fcf92ad44b2deb_Screenshot%202025-02-24%20at%2012.07.58%20PM.jpg')" class="image-for-page _4">
-                    </div>
-                    <div class="div-block-87 _4">
-                      <div class="div-block-88">
-                        <div class="text-block-24">
-                          Évènement d'entreprise
-                        </div>
-                        <div class="text-block-24">
-                          &bull;
-                        </div>
-                        <div class="text-block-24">
-                          October 1, 2025
-                        </div>
-                      </div>
-                      <div class="div-block-89">
-                        <h2 class="heading-37 _4">
-                          Production audiovisuelle en direct
-                        </h2>
-                        <p class="paragraph-15 w-dyn-bind-empty">
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div role="listitem" class="w-dyn-item">
-                  <a href="/journal/studios-livestreaming-paris" class="link-block-6 w-inline-block">
-                    <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/6929810730f6bf8794259f9f_studioparishstories3.webp')" class="image-for-page _4">
-                    </div>
-                    <div class="div-block-87 _4">
-                      <div class="div-block-88">
-                        <div class="text-block-24">
-                          Évènement d'entreprise
-                        </div>
-                        <div class="text-block-24">
-                          &bull;
-                        </div>
-                        <div class="text-block-24">
-                          October 1, 2025
-                        </div>
-                      </div>
-                      <div class="div-block-89">
-                        <h2 class="heading-37 _4">
-                          Top 5 studios livestreaming Paris
-                        </h2>
-                        <p class="paragraph-15 w-dyn-bind-empty">
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div role="listitem" class="w-dyn-item">
-                  <a href="/journal/la-montee-en-puissance-du-livestreaming-pour-les-evenements-dentreprise" class="link-block-6 w-inline-block">
-                    <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b881b020c425646ffc23ab_IMG_9733.jpg')" class="image-for-page _4">
-                    </div>
-                    <div class="div-block-87 _4">
-                      <div class="div-block-88">
-                        <div class="text-block-24">
-                          Évènement d'entreprise
-                        </div>
-                        <div class="text-block-24">
-                          &bull;
-                        </div>
-                        <div class="text-block-24">
-                          October 1, 2025
-                        </div>
-                      </div>
-                      <div class="div-block-89">
-                        <h2 class="heading-37 _4">
-                          La montée en puissance du livestreaming
-                        </h2>
-                        <p class="paragraph-15 w-dyn-bind-empty">
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div role="listitem" class="w-dyn-item">
-                  <a href="/journal/comment-organiser-une-conference-de-presse" class="link-block-6 w-inline-block">
-                    <div style="background-image:url('https://cdn.prod.website-files.com/63bedc8172f5f96ea54c3a8b/67b7583b576cc197f4e22420_image00018%20(1).jpeg')" class="image-for-page _4">
-                    </div>
-                    <div class="div-block-87 _4">
-                      <div class="div-block-88">
-                        <div class="text-block-24">
-                          Évènement d'entreprise
-                        </div>
-                        <div class="text-block-24">
-                          &bull;
-                        </div>
-                        <div class="text-block-24">
-                          October 1, 2025
-                        </div>
-                      </div>
-                      <div class="div-block-89">
-                        <h2 class="heading-37 _4">
-                          Comment organiser une conférence de presse
-                        </h2>
-                        <p class="paragraph-15 w-dyn-bind-empty">
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
-  <section class="footer-dark">
-    <div class="container-19">
-      <div class="footer-wrapper">
-        <div class="div-block-166">
-          <a href="/" class="footer-brand w-inline-block">
-            <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white.avif" loading="lazy" sizes="(max-width: 479px) 0px, 100vw" srcset="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-500.avif 500w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-800.avif 800w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-1080.avif 1080w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-1600.avif 1600w, https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63bf36b2c4b6a17131f90777_Logo_white-p-2000.avif 2000w" alt="H.stories Logo" class="image-49"/>
-          </a>
-          <div class="text-block-29">
-            Une agence évènementielle à Paris fiable et reconnue
-          </div>
-        </div>
-        <div class="footer-content">
-          <div id="w-node-_2241455d-245b-fea3-2915-a848a4581f40-a4581f3a" class="footer-block">
-            <div class="title-small">
-              STORIES
-            </div>
-            <a href="/stories" class="footer-link">
-              Nos evènements
-            </a>
-            <a href="/vision" class="footer-link">
-              Notre vision
-            </a>
-            <a href="https://www.instagram.com/stories/highlights/18008364184360805/" target="_blank" class="footer-link">
-              Nos témoignages
-            </a>
-          </div>
-          <div id="w-node-_2241455d-245b-fea3-2915-a848a4581f49-a4581f3a" class="footer-block">
-            <div class="title-small">
-              services
-            </div>
-            <a href="/activation-de-marque" class="footer-link">
-              Activation de marque
-            </a>
-            <a href="/conception-production-evenement" class="footer-link">
-              Conception et production d’évènement
-            </a>
-            <a href="/scenographie-evenementielle" class="footer-link">
-              Scénographie évènementielle
-            </a>
-            <a href="/diffusion-en-direct-emission-studio" class="footer-link">
-              Livestreaming &amp; Emission studio
-            </a>
-          </div>
-          <div id="w-node-_2241455d-245b-fea3-2915-a848a4581f5f-a4581f3a" class="footer-block">
-            <div class="title-small">
-              contact
-            </div>
-            <a href="mailto:contact@hstories.fr" class="footer-link">
-              Adresse
-              <br/>
-              ‍
-              <br/>
-              68 avenue des champs élysées
-              <br/>
-              75008 Paris
-            </a>
-            <a href="mailto:contact@hstories.fr" class="footer-link">
-              contact@hstories.fr
-            </a>
-          </div>
-          <div id="w-node-c13000e5-6190-7c80-56e9-a081a3d04747-a4581f3a" class="footer-block">
-            <div class="title-small">
-              Suivez nous
-            </div>
-            <div class="footer-social-block">
-              <a href="https://www.instagram.com/hstories_event/" target="_blank" class="footer-social-link w-inline-block">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/63c9f615f8d2ff23ac8ad511_011-instagram%20copy.avif" loading="lazy" alt="Instagram H.stories" class="image-50"/>
-              </a>
-              <a href="https://www.tiktok.com/@h.stories_event" target="_blank" class="footer-social-link w-inline-block">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/670c351a6039543847d134a4_tik-tok.svg" loading="lazy" alt="Tiktok H.stories" class="image-50"/>
-              </a>
-              <a href="https://www.youtube.com/@H.stories_event" target="_blank" class="footer-social-link w-inline-block">
-                <img src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/670c353d3d0efc6894e84d70_youtube.svg" loading="lazy" alt="Youtube H.stories" class="image-50 nih"/>
-              </a>
-            </div>
-          </div>
-        </div>
+</section>
+<div class="div-block-86">
+  <div class="link-block-5 locale w-locales-list">
+    <div role="list" class="locales-list w-locales-items">
+      <div role="listitem" class="locale w-locales-item">
+        <a hreflang="fr-FR" href="/prestataire-live-streaming" aria-current="page" class="link-7 w--current">FR</a>
       </div>
     </div>
-  </section>
-  <div class="div-block-86">
-    <div class="link-block-5 locale w-locales-list">
-      <div role="list" class="locales-list w-locales-items">
-        <div role="listitem" class="locale w-locales-item">
-          <a hreflang="fr-FR" href="/prestataire-live-streaming" class="link-7 w--current">
-            FR
-          </a>
-        </div>
-      </div>
-    </div>
-    <a href="/conditions-dutilisation" class="link-block-5 _1 w-inline-block">
-      <div>
-        Mentions légales
-      </div>
-    </a>
   </div>
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63ab104ef3af9947ab6d505f" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/js/webflow.b7815c58.23a0333d52c1be29.js" type="text/javascript">
-  </script>
-  <script>
-  /* FAQ Accordion Toggle */
-  document.addEventListener('DOMContentLoaded', function() {
-    /* FAQ spécifiques - clic sur .div-block-260 (question + flèche) */
-    document.querySelectorAll('.div-faq .div-block-260').forEach(function(header) {
-      header.addEventListener('click', function() {
-        this.closest('.div-faq').classList.toggle('faq-open');
-      });
-    });
-    /* FAQ génériques - clic sur question ou flèches */
-    document.querySelectorAll('.div-block-205').forEach(function(item) {
-      var question = item.querySelector('.text-block-32');
-      var arrows = item.querySelector('.div-block-206');
-      function toggle() { item.classList.toggle('faq-open'); }
-      if (question) question.addEventListener('click', toggle);
-      if (arrows) arrows.addEventListener('click', toggle);
+  <a href="/conditions-dutilisation" class="link-block-5 _1 w-inline-block"><div>Mentions légales</div></a>
+</div>
+<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63ab104ef3af9947ab6d505f" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.prod.website-files.com/63ab104ef3af9947ab6d505f/js/webflow.b7815c58.23a0333d52c1be29.js" type="text/javascript"></script>
+<script>
+/* FAQ Accordion Toggle */
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.div-faq .div-block-260').forEach(function(header) {
+    header.addEventListener('click', function() {
+      this.closest('.div-faq').classList.toggle('faq-open');
     });
   });
-  </script>
+});
+</script>
 </body>
 </html>
